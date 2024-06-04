@@ -1,0 +1,86 @@
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 45rem;
+}
+
+.container-img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    transform: all 1s ease-in-out;
+}
+
+.container-img>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(38, 38, 38, 0.186);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: .1rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+main {
+    padding: 1rem 3rem;
+}
+
+main>.Objetivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+
+    div {
+        display: grid;
+        grid-row: repeat(auto-fit, minmax(.2rem, 1fr));
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        background-color: #116fe3bd;
+        border: none;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 6rem 2rem;
+    /* 1rem 0 0 2rem para cuando se agregue más */
+    gap: 1rem;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
