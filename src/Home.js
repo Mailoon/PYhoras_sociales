@@ -40,3 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     verSlider(contadorI);
     comienzoSlider();
 })
+
+document.getElementById('login-button').addEventListener('click', (e) =>{
+    e.preventDefault();
+    window.location.href = 'registro.php';
+})

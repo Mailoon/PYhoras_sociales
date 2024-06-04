@@ -32,7 +32,7 @@
     </form>
   </div>
   <div class="search-login">
-    <button class="login-button">Iniciar Sesión</button>
+    <button class="login-button" id="login-button">Iniciar Sesión</button>
     <i class="fas fa-user-circle user-icon"></i>
   </div>
 </nav>
